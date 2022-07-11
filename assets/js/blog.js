@@ -100,9 +100,8 @@ function renderTechIcons(techIcons) {
 
   function countDuration(startDate, endDate) {
     const result =
-      startDate.getMonth() -
-      endDate.getMonth() +
-      12 * (endDate.getFullYear() - startDate.getFullYear());
-  
+    endDate.getMonth()-
+    startDate.getMonth();
     return Math.abs(result);
   }
+      
