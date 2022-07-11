@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/blog-style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Blog</title>
+
+</head>
+
+<body>
+     
+    <nav>
+        <div class="left-side">
+            
+            <a href="index.html">
+                <img src="assets/icons/alfi.png" style="width: 35px;"/>
+            </a>
+    
+    
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+                
+        </div>
+
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+
+        </div>
+
+
+    </nav>    
+
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div>
+                        <label for="input-blog-title">Project Name</label>
+                        <input type="text" id="input-blog-title"/>
+                    </div>
+                    <div class="deadline">
+                        
+                            <div class="date-start">
+                                <label for="input-date-start">Start Date</label>
+                                <input type="date" id="input-date-start"/>
+                            </div>
+                        
+                            <div class="date-end">
+                                <label for="input-date-end">End Date</label>
+                                <input type="date" id="input-date-end"/>
+                            </div>
+                    
+                    </div>
+                    
+                    <div>
+                        <label for="input-desc">Description</label>
+                        <textarea id="input-desc"></textarea>
+                    </div>
+                    
+                    <label>Technologies</label>
+
+                    <div class="techno-container">                       
+                        <div>
+                             <label><input type="checkbox" id="input-node-js" name="nodejs" value="node-js"/> Node Js</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" id="input-php" name="php" value="php"/> PHP</label>
+                        </div>
+        
+                        <div>
+                            <label><input type="checkbox" id="input-react-js" name="reactjs" value="react"/> React Js</label>
+                        </div>
+                            
+                        <div>
+                            <label><input type="checkbox" id="input-laravel" name="laravel" value="laravel"/> Laravel</label>
+                        </div>
+                    </div>
+
+                    <div style="margin: 10px;">
+                        <label>Upload Image</label>
+                        <div class="input-image-group">
+                            <label for="input-image">
+                                <p>choose</p>
+                               
+                            </label>
+                            <i class="fa-solid fa-paperclip" style="padding-right:10px"></i>
+                            <input type="file" id="input-image" hidden/>
+                        </div>
+                        
+                    </div>
+                    <div class="button-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- list blog -->
+        <div id="contents" class="blog-list">
+
+            <div class="blog-list-head">
+                <h1>MY PROJECT</h1>
+            </div>
+
+            <!-- the grid dynamic contents -->
+            <!-- <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="assets/images/alpha.jpg"/>
+                </div>
+                <div class="blog-content">
+                    <h1>
+                        <a href="#" target="_blank">Mas Kacamata</a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        10 Jul 2022 07:19 WIB | Alfian
+                    </div>
+                    <p >
+                        Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+                        menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+                        ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+                        meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+                        dolor sit amet consectetur adipisicing elit. Quam, molestiae
+                        numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+                        eligendi debitis?
+                    </p>
+
+                    <div class="icon-product">
+                        <i class="fa-brands fa-node-js" title="node"></i>
+                        <i class="fa-brands fa-react" title="react"></i>
+                        <i class="fa-brands fa-php" title="php"></i>
+                        <i class="fa-brands fa-laravel" title="laravel"></i>
+                    </div>
+
+                    <div id="button-blog-config" class="button-blog">
+
+                        <button id="edit">
+                            Edit
+                        </button>
+                        <button id="delete">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            
+        </div>
+
+    </div>
+</body>
+<script src="assets/js/blog.js"></script>
+</html>
+           
+
+
+                            
+
+
+                            
+                        
+                            
+                        
+    
